@@ -1,12 +1,12 @@
 SET SERVEROUTPUT ON;
 
 DECLARE
-    marks NUMBER := 75;
+    num NUMBER := 10;
 BEGIN
-    IF marks >= 50 THEN
-        DBMS_OUTPUT.PUT_LINE('PASS');
+    IF MOD(num, 2) = 0 THEN
+        DBMS_OUTPUT.PUT_LINE('Even number');
     ELSE
-        DBMS_OUTPUT.PUT_LINE('FAIL');
+        DBMS_OUTPUT.PUT_LINE('Odd number');
     END IF;
 END;
 /
